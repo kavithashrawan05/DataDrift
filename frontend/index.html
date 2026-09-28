@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataDrift - Deal Intelligence Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>DataDrift</h1>
+        <h2>Deal Intelligence Agent</h2>
+
+        <label>Customer</label>
+        <input type="text" id="customer" placeholder="Enter customer name">
+
+        <label>Conversation</label>
+        <textarea id="conversation" placeholder="Enter customer conversation..."></textarea>
+
+        <button onclick="saveConversation()">Save Conversation</button>
+
+        <hr>
+
+        <label>Ask about customer</label>
+        <input type="text" id="question" placeholder="What is the customer's budget?">
+
+        <button onclick="recallCustomer()">Recall</button>
+
+        <div class="answer">
+            <h3>Answer</h3>
+            <p id="answer">Your answer will appear here.</p>
+        </div>
+
+        <button onclick="prepareMeeting()">Prepare Meeting</button>
+
+        <div class="meeting">
+            <h3>Meeting Brief</h3>
+            <p id="meetingBrief">Your meeting brief will appear here.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
